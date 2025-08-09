@@ -1,0 +1,59 @@
+<!doctype html><html lang="en" data-theme="admin"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CorSys — Demo</title>
+<link rel="stylesheet" href="assets/styles.css">
+<script src="assets/config.js"></script>
+<script src="assets/app.js" defer></script>
+</head><body>
+<div id="toast" class="toast"></div>
+<header class="header"><div class="wrap brand">
+  <div class="logo">C</div><div><strong>CorSys</strong><div class="small">Guided POC</div></div>
+  <nav class="nav">
+    <a class="active" href="index.html">Home</a>
+    <a href="admin/index.html">Admin</a>
+    <a href="fund/index.html">Fund</a>
+    <a href="investor/index.html">Investor</a>
+  </nav>
+</div></header>
+<main class="wrap"><div class="grid">
+<section class="card">
+  <h2>Step 0 — Mode</h2>
+  <div id="status" class="alert">Offline Demo Mode — actions are simulated.</div>
+  <p><button class="btn" id="btnDemo">Offline Demo Mode: <span id="demoFlag">ON</span></button></p>
+  <p class="small">Admin: 0x948e7cc7A0A32403322cb32E7DdEFF06816F2653<br>Fund: 0x3042679898B5E1F0c4eB8A9c0C0ccc2B7217EB8e<br>Investor: 0xE0579990404AD14Aa7aB463f3181aCD6F3eB0c6C</p>
+</section>
+
+<section class="card">
+  <h2>Step 1 — Balances</h2>
+  <table class="table small">
+    <tr><th>Admin</th><td>100,000 FUND</td></tr>
+    <tr><th>Fund</th><td>50,000 FUND</td></tr>
+    <tr><th>Investor</th><td>25,000 FUND</td></tr>
+    <tr><th>Total Supply</th><td>175,000 FUND</td></tr>
+  </table>
+</section>
+
+<section class="card two">
+  <h2>Step 2 — Mint (Admin → Fund)</h2>
+  <p><button class="btn primary" id="btnMint">Mint</button></p>
+</section>
+
+<section class="card two">
+  <h2>Step 3 — Distribute (Fund → Investor)</h2>
+  <p><button class="btn" id="btnTransfer">Transfer</button></p>
+</section>
+
+<section class="card two">
+  <h2>Step 4 — Redeem (Burn)</h2>
+  <p><button class="btn" id="btnBurn">Burn</button></p>
+</section>
+
+<section class="card">
+  <h2>Step 5 — Reports</h2>
+  <ul class="small">
+    <li>NAV Report — <a href="docs/nav-report.html" target="_blank">open</a> — <button class="btn" data-doc-hash="0xnav">Record hash</button></li>
+    <li>Investor Letter — <a href="docs/investor-letter.html" target="_blank">open</a> — <button class="btn" data-doc-hash="0xletter">Record hash</button></li>
+    <li>Capital Account Statement — <a href="docs/capital-statement.html" target="_blank">open</a> — <button class="btn" data-doc-hash="0xstmt">Record hash</button></li>
+  </ul>
+</section>
+</div></main><footer class='wrap'>© 2025 CorSys</footer></body></html>

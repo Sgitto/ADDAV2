@@ -1,0 +1,26 @@
+
+:root{--font:ui-sans-serif,-apple-system,Segoe UI,Roboto,Helvetica,Arial;--bg:#f7f7f8;--card:#fff;--text:#111827;--muted:#6b7280;--border:#e5e7eb;}
+:root[data-theme="admin"]{--accent:#FF6A13;--accent-2:#1f2937;--accent-50:#FFF3EC;}
+:root[data-theme="fund"]{--accent:#0B5FFF;--accent-2:#000000;--accent-50:#EEF4FF;}
+:root[data-theme="investor"]{--accent:#E6B800;--accent-2:#3a3a3a;--accent-50:#FFF9DB;}
+*{box-sizing:border-box}body{margin:0;font-family:var(--font);background:var(--bg);color:var(--text)}
+.header{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--border);}
+.wrap{max-width:1160px;margin:0 auto;padding:16px 20px;}
+.brand{display:flex;align-items:center;gap:10px}
+.logo{width:36px;height:36px;border-radius:10px;background:var(--accent);display:grid;place-items:center;color:#fff;font-weight:700}
+.nav{display:flex;gap:8px;flex-wrap:wrap;margin-left:auto}
+.nav a{padding:8px 10px;border:1px solid var(--border);border-radius:10px;background:var(--card);color:var(--text);font-size:14px;text-decoration:none}
+.nav a.active{border-color:var(--accent);color:var(--accent-2)}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(12,1fr);padding:20px}
+.card{grid-column:span 12;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px}
+.two{grid-column:span 12}@media(min-width:900px){.two{grid-column:span 6}}
+.alert{padding:10px 12px;border-radius:10px;background:#fff3cd;color:#664d03;border:1px solid #ffe69c;font-size:14px}
+.success{padding:10px 12px;border-radius:10px;background:#dcfce7;color:#166534;border:1px solid #bbf7d0;font-size:14px}
+.small{color:var(--muted);font-size:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;border:1px solid var(--border);background:var(--card);text-decoration:none;color:#111827;cursor:pointer}
+.btn.primary{background:var(--accent);color:#fff;border-color:transparent}
+.table{width:100%;border-collapse:collapse}.table th,.table td{border-bottom:1px solid var(--border);padding:8px;text-align:left}
+.toast{position:fixed;right:16px;bottom:16px;display:none;min-width:300px;max-width:80vw;background:#111827;color:#fff;padding:12px 14px;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.25);z-index:9999}
+.toast.show{display:block}
+.toast a{color:#93c5fd}
+footer{border-top:1px solid var(--border);padding:16px 20px;color:#6b7280;font-size:12px}
