@@ -1,0 +1,26 @@
+
+:root{--font:ui-sans-serif,-apple-system,Segoe UI,Roboto,Helvetica,Arial;--bg:#f7f7f8;--card:#fff;--text:#111827;--muted:#6b7280;--border:#e5e7eb;}
+/* Admin (Alter Domus–style) */
+:root[data-theme="admin"]{--accent:#FF6A13;--accent-2:#1f2937;--accent-50:#FFF3EC;}
+/* Fund (black & blue) */
+:root[data-theme="fund"]{--accent:#0B5FFF;--accent-2:#000000;--accent-50:#EEF4FF;}
+/* Investor (subtle yellow) */
+:root[data-theme="investor"]{--accent:#E6B800;--accent-2:#3a3a3a;--accent-50:#FFF9DB;}
+
+*{box-sizing:border-box}
+body{margin:0;font-family:var(--font);background:var(--bg);color:var(--text)}
+.header{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--border);}
+.wrap{max-width:1080px;margin:0 auto;padding:16px 20px;}
+.brand{display:flex;align-items:center;gap:10px}
+.logo{width:36px;height:36px;border-radius:10px;background:var(--accent);display:grid;place-items:center;color:#fff;font-weight:700}
+.nav{display:flex;gap:8px;flex-wrap:wrap;margin-left:auto}
+.nav a{padding:8px 10px;border:1px solid var(--border);border-radius:10px;background:var(--card);color:var(--text);font-size:14px;text-decoration:none}
+.nav a.active{border-color:var(--accent);color:var(--accent-2)}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(12,1fr);padding:20px}
+.card{grid-column:span 12;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px}
+.badge{display:inline-block;padding:4px 8px;border-radius:999px;background:var(--accent-50);color:var(--accent-2);font-size:12px}
+.small{color:var(--muted);font-size:12px}
+.btn{display:inline-block;padding:10px 14px;border-radius:12px;border:1px solid var(--border);background:var(--card);text-decoration:none;color:var(--text)}
+.btn.primary{background:var(--accent);color:#fff;border-color:transparent}
+footer{border-top:1px solid var(--border);padding:16px 20px;color:var(--muted);font-size:12px}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}

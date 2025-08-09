@@ -1,64 +1,36 @@
 <!doctype html>
-<html lang="en" data-theme="investor">
+<html lang="en" data-theme="admin">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CorSys — Investor</title>
-  <link rel="stylesheet" href="../assets/styles.css">
-  <link rel="icon" href="../assets/favicon.svg">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CorSys — Home</title>
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-  <header class="header">
-    <div class="header-inner">
-      <div class="brand">
-        <div class="brand-logo">C</div>
-        <div class="brand-title">
-          <div class="tag">CorSys • Operational Blueprint</div>
-          <h1>Investor</h1>
-        </div>
-      </div>
-      <nav class="nav">
-        <a href="/mnt/data/corsys_site/index.html" class="">Home</a>
-<a href="/mnt/data/corsys_site/admin/index.html" class="">Admin</a>
-<a href="/mnt/data/corsys_site/fund/index.html" class="">Fund Client</a>
-<a href="/mnt/data/corsys_site/investor/index.html" class="active">Investor</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="container">
-    
-<section class="grid">
-  <div class="card" style="grid-column: span 12;">
-    <h2>Investor View</h2>
-    <div class="sub">Neutral theme</div>
-    <p>This page shows the investor-facing snapshot of holdings and recent activity. Replace with live data later.</p>
+<header class="header">
+  <div class="wrap brand">
+    <div class="logo">C</div>
+    <div><strong>CorSys</strong><div class="small">Operational blueprint for tokenized fund services</div></div>
+    <nav class="nav">
+      <a class="active" href="index.html">Home</a>
+      <a href="admin/index.html">Admin</a>
+      <a href="fund/index.html">Fund Client</a>
+      <a href="investor/index.html">Investor</a>
+    </nav>
   </div>
-
-  <div class="card" style="grid-column: span 6;">
-    <h2>Wallet</h2>
-    <div class="small">Address</div>
-    <div class="mono small">0xE0579990404AD14Aa7aB463f3181aCD6F3eB0c6C</div>
-    <div class="small">Balance: ~0.06 SEPO</div>
-    <div class="cta-row" style="margin-top:8px;">
-      <a class="btn" href="https://sepolia.etherscan.io/address/0xE0579990404AD14Aa7aB463f3181aCD6F3eB0c6C" target="_blank">Etherscan</a>
-    </div>
+</header>
+<main class="wrap">
+  <div class="grid">
+    <section class="card">
+      <h2>Welcome</h2>
+      <p>Use the buttons below to navigate the CorSys demo.</p>
+      <p>
+        <a class="btn primary" href="admin/index.html">Admin (Alter Domus colors)</a>
+        <a class="btn" href="fund/index.html">Fund Client (black/blue)</a>
+        <a class="btn" href="investor/index.html">Investor (subtle yellow)</a>
+      </p>
+      <p class="small">Static demo — all paths are relative and GitHub Pages–ready.</p>
+    </section>
   </div>
-
-  <div class="card" style="grid-column: span 6;">
-    <h2>What to Expect</h2>
-    <ul class="small">
-      <li>Units received after subscription approval.</li>
-      <li>Periodic statements via central email.</li>
-      <li>Redemptions coordinated with the Fund and Admin.</li>
-    </ul>
-  </div>
-</section>
-
-  </main>
-
-  <footer class="footer">
-    © 2025 CorSys • Internal Demo — not for external distribution.
-  </footer>
-</body>
-</html>
+</main>
+<footer class="wrap">© 2025 CorSys</footer>
+</body></html>
